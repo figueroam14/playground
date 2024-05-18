@@ -1,0 +1,5 @@
+#! /bin/bash
+
+
+IP=$1
+wget -r -np -nd -k http://$IP
