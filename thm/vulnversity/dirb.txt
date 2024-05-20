@@ -1,0 +1,10 @@
+/.htpasswd           [33m (Status: 403)[0m [Size: 299]
+/.htaccess           [33m (Status: 403)[0m [Size: 299]
+/.hta                [33m (Status: 403)[0m [Size: 294]
+/css                 [36m (Status: 301)[0m [Size: 319][34m [--> http://10.10.245.223:3333/css/][0m
+/fonts               [36m (Status: 301)[0m [Size: 321][34m [--> http://10.10.245.223:3333/fonts/][0m
+/images              [36m (Status: 301)[0m [Size: 322][34m [--> http://10.10.245.223:3333/images/][0m
+/index.html          [32m (Status: 200)[0m [Size: 33014]
+/internal            [36m (Status: 301)[0m [Size: 324][34m [--> http://10.10.245.223:3333/internal/][0m
+/js                  [36m (Status: 301)[0m [Size: 318][34m [--> http://10.10.245.223:3333/js/][0m
+/server-status       [33m (Status: 403)[0m [Size: 303]
