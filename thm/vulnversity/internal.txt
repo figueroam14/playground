@@ -1,6 +1,0 @@
-/.hta                [33m (Status: 403)[0m [Size: 303]
-/.htpasswd           [33m (Status: 403)[0m [Size: 308]
-/.htaccess           [33m (Status: 403)[0m [Size: 308]
-/css                 [36m (Status: 301)[0m [Size: 328][34m [--> http://10.10.188.154:3333/internal/css/][0m
-/index.php           [32m (Status: 200)[0m [Size: 525]
-/uploads             [36m (Status: 301)[0m [Size: 332][34m [--> http://10.10.188.154:3333/internal/uploads/][0m
