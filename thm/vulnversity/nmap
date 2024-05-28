@@ -1,7 +1,8 @@
-# Nmap 7.94SVN scan initiated Sun May 19 22:54:09 2024 as: nmap -sC -A -vv -oN nmap 10.10.245.223
-Nmap scan report for 10.10.245.223
-Host is up, received conn-refused (0.11s latency).
-Scanned at 2024-05-19 22:54:10 CDT for 45s
+# Nmap 7.94SVN scan initiated Sun May 19 23:50:25 2024 as: nmap -sC -A -vv -oN nmap 10.10.188.154
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?.*\r\nServer: Virata-EmWeb/R([\d_]+)\r\nContent-Type: text/html; ?charset=UTF-8\r\nExpires: .*<title>HP (Color |)LaserJet ([\w._ -]+)&nbsp;&nbsp;&nbsp;'
+Nmap scan report for 10.10.188.154
+Host is up, received conn-refused (0.13s latency).
+Scanned at 2024-05-19 23:50:25 CDT for 42s
 Not shown: 994 closed tcp ports (conn-refused)
 PORT     STATE SERVICE     REASON  VERSION
 21/tcp   open  ftp         syn-ack vsftpd 3.0.3
@@ -16,16 +17,26 @@ PORT     STATE SERVICE     REASON  VERSION
 139/tcp  open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
 445/tcp  open  netbios-ssn syn-ack Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
 3128/tcp open  http-proxy  syn-ack Squid http proxy 3.5.12
-|_http-server-header: squid/3.5.12
 |_http-title: ERROR: The requested URL could not be retrieved
+|_http-server-header: squid/3.5.12
 3333/tcp open  http        syn-ack Apache httpd 2.4.18 ((Ubuntu))
 |_http-title: Vuln University
 | http-methods: 
-|_  Supported Methods: GET HEAD POST OPTIONS
+|_  Supported Methods: POST OPTIONS GET HEAD
 |_http-server-header: Apache/2.4.18 (Ubuntu)
 Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: vulnuniversity
+|   NetBIOS computer name: VULNUNIVERSITY\x00
+|   Domain name: \x00
+|   FQDN: vulnuniversity
+|_  System time: 2024-05-20T00:51:01-04:00
 | nbstat: NetBIOS name: VULNUNIVERSITY, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
 | Names:
 |   VULNUNIVERSITY<00>   Flags: <unique><active>
@@ -39,33 +50,23 @@ Host script results:
 |   00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
 |   00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
 |_  00:00:00:00:00:00:00:00:00:00:00:00:00:00
+|_clock-skew: mean: 1h19m59s, deviation: 2h18m33s, median: 0s
 | smb2-time: 
-|   date: 2024-05-20T03:54:51
+|   date: 2024-05-20T04:51:01
 |_  start_date: N/A
-| smb-os-discovery: 
-|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
-|   Computer name: vulnuniversity
-|   NetBIOS computer name: VULNUNIVERSITY\x00
-|   Domain name: \x00
-|   FQDN: vulnuniversity
-|_  System time: 2024-05-19T23:54:52-04:00
-| smb2-security-mode: 
-|   3:1:1: 
-|_    Message signing enabled but not required
-|_clock-skew: mean: 1h20m01s, deviation: 2h18m34s, median: 0s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 55352/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 14936/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 43457/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 22697/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
 | smb-security-mode: 
 |   account_used: guest
 |   authentication_level: user
 |   challenge_response: supported
 |_  message_signing: disabled (dangerous, but default)
-| p2p-conficker: 
-|   Checking for Conficker.C or higher...
-|   Check 1 (port 63256/tcp): CLEAN (Couldn't connect)
-|   Check 2 (port 3815/tcp): CLEAN (Couldn't connect)
-|   Check 3 (port 58847/udp): CLEAN (Failed to receive data)
-|   Check 4 (port 54687/udp): CLEAN (Failed to receive data)
-|_  0/4 checks are positive: Host is CLEAN or ports are blocked
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun May 19 22:54:55 2024 -- 1 IP address (1 host up) scanned in 45.46 seconds
+# Nmap done at Sun May 19 23:51:07 2024 -- 1 IP address (1 host up) scanned in 42.14 seconds
