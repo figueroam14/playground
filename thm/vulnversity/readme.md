@@ -1,7 +1,6 @@
 tryhackme | vulnversity
 
-10.10.33.213 
-
+https://tryhackme.com/r/room/vulnversity
 
 writeups:
 
