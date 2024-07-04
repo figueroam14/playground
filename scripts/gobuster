@@ -1,4 +1,0 @@
-#! /bin/bash
-
-IP=$1
-gobuster dir -u http://$IP -w /usr/share/wordlists/dirb/common.txt -t 4 -o ../dirb.txt
