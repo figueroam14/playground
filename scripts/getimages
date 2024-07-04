@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# getImages.sh -> downloads all images from the IP and stores them to current directory 
 
 IP=$1
+echo "IP=$IP"
+set -x
 wget -r -np -nd -k http://$IP
