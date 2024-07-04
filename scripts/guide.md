@@ -1,5 +1,6 @@
 
 #### nmap scan
+network scan with default script
 
 `nmap -sC -A -vv 10.10.1.100 -oN nmap`
 ```
@@ -10,6 +11,8 @@
 ```
 
 #### gobuster scan
+scan for hidden directories
+
 `gobuster dir -u http://10.10.1.100 -w /usr/share/wordlists/dirb/common.txt -t 4 -o ../dirb.txt`
 ```
 -u: url to target 
