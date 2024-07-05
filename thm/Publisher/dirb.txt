@@ -1,0 +1,2 @@
+/images              [36m (Status: 301)[0m [Size: 311][34m [--> http://10.10.9.208/images/][0m
+/spip                [36m (Status: 301)[0m [Size: 309][34m [--> http://10.10.9.208/spip/][0m
