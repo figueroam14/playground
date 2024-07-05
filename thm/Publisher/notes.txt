@@ -1,0 +1,10 @@
+tryhackme | publisher v2.1
+
+
+# nmap scan: 
+
+
+
+# directory scan: 
+
+
