@@ -1,0 +1,2 @@
+# Nmap 7.94SVN scan initiated Sat Jul  6 11:21:42 2024 as: nmap -sC -sV -A -on -vv -p- 10.10.1.52 nmap-full
+Failed to resolve "nmap-full".
