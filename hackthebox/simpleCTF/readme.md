@@ -57,6 +57,8 @@ CMS Made Simple Module Antz Toolkit 1.02 - Arbitrary File Upload
 `/usr/bin/python2 exploit.py -u http://10.10.90.196 --crack -w /usr/share/wordlists/rockyou.txt`
 
 
+---
+#### Key:
 
 
 Q: How many services are running under port 1000?
@@ -66,6 +68,8 @@ Q: How many services are running under port 1000?
 Q: What is running on the higher port?
 
 SSH
+
+
 
 
 Q: What's the CVE you're using against the application?
