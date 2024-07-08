@@ -43,4 +43,12 @@ PORT     STATE SERVICE REASON  VERSION
 
 # search msfconsole for exploits
 
-msfconsole
+```
+searchsploit cms made simple
+
+CMS Made Simple < 1.12.1 / < 2.1.3 - Web Server Cache Poisoning                                                                                                                                                      | php/webapps/39760.txt
+CMS Made Simple < 2.2.10 - SQL Injection <------- Using this one                                                                                                                                                     | php/webapps/46635.py
+CMS Made Simple Module Antz Toolkit 1.02 - Arbitrary File Upload
+
+# search google for php/webapps/46635.py and copy script locally
+```
