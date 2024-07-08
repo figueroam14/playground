@@ -2,7 +2,7 @@ TryHackMe | SimpleCTF
 https://tryhackme.com/r/room/easyctf
 
 
-# nmap scan
+#### nmap scan
 `nmap -sC -sV -A 10.10.90.196 -vv -oN nmap`
 
 ```
