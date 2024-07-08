@@ -1,5 +1,9 @@
 TryHackMe | SimpleCTF
+
 https://tryhackme.com/r/room/easyctf
+
+WriteUps:
+ - https://medium.com/@akerkar34/simple-ctf-tryhackme-walkthrough-13fae8abe32d
 
 
 #### nmap scan
