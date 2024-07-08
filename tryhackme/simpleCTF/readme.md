@@ -91,35 +91,3 @@ sudo vim -c '!sh'
 cd /root
 cat root.txt
 ```
-
-
-
-
----
-#### Key:
-
-
-Q: How many services are running under port 1000?
-
-2
-
-Q: What is running on the higher port?
-
-SSH
-
-
-Q: What's the CVE you're using against the application?
-
-Q: To what kind of vulnerability is the application vulnerable?
-
-Q: What's the password?
-
-Q: Where can you login with the details obtained?
-
-Q: What's the user flag?
-
-Q: Is there any other user in the home directory? 
-
-Q: What's its name?
-
-Q: What can you leverage to spawn a privileged shell?
