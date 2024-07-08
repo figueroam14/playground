@@ -7,6 +7,7 @@ WriteUps:
 https://medium.com/@akerkar34/simple-ctf-tryhackme-walkthrough-13fae8abe32d
 
 
+---
 #### nmap scan
 `nmap -sC -sV -A 10.10.90.196 -vv -oN nmap`
 
@@ -70,13 +71,18 @@ Q: What is running on the higher port?
 SSH
 
 
-
-
 Q: What's the CVE you're using against the application?
+
 Q: To what kind of vulnerability is the application vulnerable?
+
 Q: What's the password?
+
 Q: Where can you login with the details obtained?
+
 Q: What's the user flag?
+
 Q: Is there any other user in the home directory? 
+
 Q: What's its name?
+
 Q: What can you leverage to spawn a privileged shell?
