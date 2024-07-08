@@ -40,16 +40,20 @@ PORT     STATE SERVICE REASON  VERSION
 #### gobuster hidden directory scan:
 `gobuster dir -u http://10.10.90.196 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o dirb.txt`
 
+```
+# Found directory:
+10.10.90.196/simple
+# Navigate to directory and found: " This site is powered by CMS Made Simple version 2.2.8 "
+```
 
 
-#### search for exploits:
+
+#### search for exploits involving that CMS:
 
 `searchsploit cms made simple`
 
 ```
-CMS Made Simple < 1.12.1 / < 2.1.3 - Web Server Cache Poisoning                                                                                                                                                      | php/webapps/39760.txt
-CMS Made Simple < 2.2.10 - SQL Injection <------- Using this one                                                                                                                                                     | php/webapps/46635.py
-CMS Made Simple Module Antz Toolkit 1.02 - Arbitrary File Upload
+CMS Made Simple < 2.2.10 - SQL Injection                                                               | php/webapps/46635.py
 # search google for php/webapps/46635.py and copy script locally
 ```
 
