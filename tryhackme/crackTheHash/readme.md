@@ -35,11 +35,9 @@ hashcat -m 100 hash2.txt /usr/share/wordlists/rockyou.txt
 # hash-mode 1470 = sha256
 hashcat -m 1470 hash3.txt /usr/share/wordlists/rockyou.txt 
 
-
 # hash-identifer could not find hash type, so used an online tool: 
 https://www.tunnelsup.com/hash-analyzer/
 type was: bcrypt
-
 hashcat -m 3200 hash4.txt /usr/share/wordlists/rockyou.txt 
 
 
