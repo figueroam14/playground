@@ -2,5 +2,5 @@ TryHackMe Tracker
 
 #### ROOM NAME | COMPLETED
 
-- SIMPLECTF | 07/2024
+- SimpleCTF | 07/2024
     
