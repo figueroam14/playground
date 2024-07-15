@@ -1,8 +1,6 @@
 TryHackMe Tracker
 
+#### ROOM NAME | COMPLETED
 
-
-ROOM NAME | COMPLETED
-
-
-SIMPLECTF | 07/2024
+- SIMPLECTF | 07/2024
+    
