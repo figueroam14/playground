@@ -40,6 +40,10 @@ https://www.tunnelsup.com/hash-analyzer/
 type was: bcrypt
 hashcat -m 3200 hash4.txt /usr/share/wordlists/rockyou.txt 
 
+### Cracking process was taking too long so canceled, est time was 13 days LOL
+
+
+
 
 
 ```
