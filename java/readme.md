@@ -9,14 +9,21 @@ Install from Java website:
 
 Note: Ensure you are selecting correct installed based on architecture
 
-Check java version: 
 
-`java --version`
 
-##### Compiling and Running Java Hello World
+```
+# check java version 
+java --version
 
-* Create a file named `Main.java`
-* Contents of file: 
+# compile java file (public class should be named same as file name)
+javac Main.java
+
+# run the file
+java Main
+
+```
+
+* Create a file named `Main.java`:
 ```
 public class Main {
     public static void main(String[] args) {
@@ -25,15 +32,6 @@ public class Main {
   }
 
 ```
-
-* Compile the file: 
-
-`javac Main.java`
-
-* Run the file:
-
-`java Main`
-
 
 
 
