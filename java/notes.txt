@@ -1,0 +1,23 @@
+create a program that creates different vehicles from a vehicle class 
+
+
+
+vehicle class contains: 
+
+Platform type
+platform name
+platform capabilities
+platform positional data
+
+
+
+
+create a cca
+create a manned fighter
+
+
+use cortesian formula to get distance between aircraft and strike target
+
+
+
+look into using swing to use a GUI to create vehicles
