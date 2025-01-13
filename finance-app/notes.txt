@@ -1,0 +1,31 @@
+Finance App 
+
+
+
+* Written in Java to practice and get experience
+
+
+* Track Net Worth
+* Track Active Credit Cards
+    * CC Details: 
+        * Current Balance
+        * Credit Limit
+        * APR 
+        * Benefits
+        * When to use CC's
+        * Expiring APR
+        * Features to Credit Card Churning
+* Track credit card applications
+* Track credit increases
+* Track income
+* Track spending
+* Track Yearly bills
+* Track Subscriptions
+* Reminder on when renegotiate if possible
+* Track Credit Score progress
+* Track Debt repayment
+
+
+
+
+
