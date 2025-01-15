@@ -1,12 +1,29 @@
+import javax.swing.*; 
+
+
 
 public class Main {
 
     public static void main(String[] args) {
+
+        
+        // Create JFrame instance
+        JFrame frame = new JFrame();
+        frame.setLayout(null);
+        frame.setSize(1400, 1000);
+        frame.setVisible(true);
+
+
         System.out.println("Hello-World");
 
         Person Michael = new Person("Michael", "Money", "Figueroa", "6020 Altomonte ", "634634634634");
+        int assests = 1000;
+        int debts = 100;
+        int netWorth = Michael.getNetWorth(assests, debts);
+
         String fullName = Michael.getFullName();
         System.out.println("Full Name: " + fullName);
+        System.out.println("Net Worth: " + String.valueOf(netWorth));
     }
 }
 
@@ -52,7 +69,7 @@ class Person {
     }
 
     // Public Getters
-    String getFullName () {
+    String getFullName() {
         String fullName = fName + " " + mName + " " + lName;
         return fullName;
     }
@@ -63,12 +80,11 @@ class Person {
 
     String getSSN() {
         return SSN;
-
     }
 
     // method to calculate net worth
-    public int calculateNetWorth() {
-        int netWorth = assetsTotal - debtsTotal;
+    public int getNetWorth(int assets, int debts) {
+        int netWorth = assets - debts;
         return netWorth;
     }
 }
