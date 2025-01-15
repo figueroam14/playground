@@ -1,13 +1,10 @@
-import javax.swing.*; 
 
-
+import javax.swing.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        
-        // Create JFrame instance
         JFrame frame = new JFrame();
         frame.setLayout(null);
         frame.setTitle("myFinance");
@@ -18,10 +15,19 @@ public class Main {
         button.setBounds(600, 200, 200, 200);
         frame.add(button);
 
+        JLabel userLabel = new JLabel();
+        JLabel passwordLabel = new JLabel();
+        passwordLabel.setText("password");
 
+        JButton loginButton = new JButton("Login");
+        loginButton.setBounds(600, 200, 200, 200);
+        JButton forgotPWButton = new JButton("Forgot Password");
+        forgotPWButton.setBounds(600, 200, 200, 200);
 
-
-        System.out.println("Hello-World");
+        frame.add(userLabel);
+        frame.add(passwordLabel);
+        frame.add(loginButton);
+        frame.add(forgotPWButton);
 
         Person Michael = new Person("Michael", "Money", "Figueroa", "6020 Altomonte ", "634634634634");
         int assests = 1000;
