@@ -10,8 +10,15 @@ public class Main {
         // Create JFrame instance
         JFrame frame = new JFrame();
         frame.setLayout(null);
+        frame.setTitle("myFinance");
         frame.setSize(1400, 1000);
         frame.setVisible(true);
+
+        JButton button = new JButton("Create User");
+        button.setBounds(600, 200, 200, 200);
+        frame.add(button);
+
+
 
 
         System.out.println("Hello-World");
