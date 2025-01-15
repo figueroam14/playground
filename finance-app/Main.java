@@ -12,7 +12,7 @@ public class Main {
         frame.setVisible(true);
 
         JButton button = new JButton("Create User");
-        button.setBounds(600, 200, 200, 200);
+        button.setBounds(400, 200, 200, 200);
         frame.add(button);
 
         JLabel userLabel = new JLabel();
@@ -20,7 +20,7 @@ public class Main {
         passwordLabel.setText("password");
 
         JButton loginButton = new JButton("Login");
-        loginButton.setBounds(600, 200, 200, 200);
+        loginButton.setBounds(500, 300, 200, 200);
         JButton forgotPWButton = new JButton("Forgot Password");
         forgotPWButton.setBounds(600, 200, 200, 200);
 
