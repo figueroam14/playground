@@ -26,6 +26,15 @@ Finance App
 * Track Debt repayment
 
 
+TODO: 
+
+- Create Person class and profile
+
+
+
+
+
+
 
 
 
